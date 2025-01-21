@@ -14,3 +14,10 @@ export interface CheckoutComponentProps {
      */
     stepId: 'contact-details' | 'delivery-method' | 'payment-and-billing' | 'place-order';
   }
+
+export interface ProductsComponentProps {
+    /**
+     * The ID of the product
+     */
+    productId: string;
+  }
