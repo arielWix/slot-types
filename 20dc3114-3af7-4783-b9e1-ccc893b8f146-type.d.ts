@@ -21,3 +21,12 @@ export interface ProductsComponentProps {
      */
     productId: string;
   }
+
+
+export interface OrderComponentProps {
+   /**
+     * The ID of the order
+     */
+    orderId: string;
+    
+}
