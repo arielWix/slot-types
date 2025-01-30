@@ -1,3 +1,21 @@
+
+
+
+type MyInnerType = {
+  lastName: string;
+}
+
+export interface InnerInterface {
+  name: string;
+  myInnerType: MyInnerType;
+}
+
+export interface MenuSingleItem {
+  id: string; //product id
+}
+
+
+
 export interface CheckoutComponentProps {
     /**
      * The ID of the current checkout process.
@@ -13,6 +31,10 @@ export interface CheckoutComponentProps {
      * - 'place-order'
      */
     stepId: 'contact-details' | 'delivery-method' | 'payment-and-billing' | 'place-order';
+
+
+    myInnerType: InnerInterface;
+    
 }
 
 export interface ProductsComponentProps {
